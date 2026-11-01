@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <style>
+  .slider { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; width: 500px; height: 300px; }
+  .slider img { flex: 0 0 100%; scroll-snap-align: start; object-fit: cover; }
+</style>
+</head>
+<body>
+  <h1>My Website Slider</h1>
+  <div class="slider" id="s">
+    <img src="https://www.magnific.com/free-photos-vectors/purple-aesthetic-wallpaper">
+    <img src="https://www.pinterest.com/pin/14214555067562184/">
+    <img src="https://www.pinterest.com/ideas/cute-coding-wallpaper/957294193508/">
+  </div>
+  <button onclick="s.scrollBy({left: -500, behavior: 'smooth'})">Back</button>
+  <button onclick="s.scrollBy({left: 500, behavior: 'smooth'})">Next</button>
+</body>
+</html>
